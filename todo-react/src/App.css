@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(212, 198, 164);
+}
+
+.todo-container {
+  background: rgba(255, 198, 10, 0.39);
+  color: black;
+  width: 20em;
+  height: auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(187, 172, 152);
+
+  margin-top: 3rem;
+}
+
+.title-container {
+  margin: 0.2em 0;
+  height: 3em;
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px dotted rgba(255, 0, 0, 0.178);
+}
+.title-text {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2em;
+  color: rgba(255, 0, 0, 0.651);
+}
+
+.delete {
+  position: relative;
+  left: 22%;
+  bottom: 30%;
+  cursor: pointer;
+  color: rgba(107, 93, 93, 0.466);
+}
+
+.delete:hover {
+  color: rgba(255, 0, 0, 0.315);
+}
+
+.list-container {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  /* background-color: yellowgreen; */
+  justify-content: center;
+  width: 100%;
+}
+
+.add-text-container {
+  /* background-color: violet; */
+  border-bottom: 1px dotted rgba(255, 0, 0, 0.178);
+}
+
+.add-text-container i {
+  color: rgba(0, 100, 0, 0.452);
+  cursor: pointer;
+}
+input[type="text"] {
+  width: 85%;
+  height: 1.8em;
+  background-color: transparent;
+  border: 0px solid;
+  padding-left: 1em;
+  font-size: 1.3em;
+  font-family: "Gochi Hand", cursive;
+}
+input:focus {
+  outline: none;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+
+.add-items-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* background-color: blue; */
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1em;
+  /* background-color: darkorange; */
+  border-bottom: 1px dotted rgba(255, 0, 0, 0.199);
+}
+
+.item:hover .fa-trash {
+  display: block;
+}
+
+.item:hover .fa-square {
+  display: block;
+  color: rgba(0, 128, 0, 0.404);
+}
+
+.item:hover .fa-check-square {
+  color: rgba(0, 128, 0, 0.404);
+  display: block;
+}
+
+.item .item-text {
+  font-size: 1.3em;
+  color: rgb(107, 93, 93);
+  font-family: "Gochi Hand", cursive;
+  /* text-decoration: line-through; */
+  /* background-color: blue; */
+}
+
+.item i {
+  padding-right: 0.4em;
+  padding-top: 0.2em;
+  color: rgba(255, 0, 0, 0.281);
+  cursor: pointer;
+  display: none;
+}
+
+.icons {
+  display: flex;
+}
